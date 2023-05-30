@@ -1,11 +1,11 @@
 /* block specific CSS goes here */
-
 main .hero-container > div {
   max-width: unset;
 }
   
 main .hero-container {
   padding: 0;
+  background-color: rgb(6, 6, 6);
 }
   
 main .hero {
@@ -15,15 +15,27 @@ main .hero {
 }
 
 main .hero h1 {
+  font-family: var(--museo-font-family);
+  font-weight: 500;
+  font-size: 5rem;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  color: white;
+}
+
+main .hero h1 span {
+  background-image: linear-gradient(90.38deg,#00fff0 4.77%,#00f6ff 46.73%,#b896ff 90.19%);
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  /*color: white;*/
+  background-color: #00fff0;
 }
 
 main .hero picture {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 0;
   left: 0;
   bottom: 0;

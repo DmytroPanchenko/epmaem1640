@@ -1,0 +1,77 @@
+/* block specific CSS goes here */
+main .hero-full-width-container > div {
+  max-width: unset;
+}
+  
+main .hero-full-width-container {
+  padding: 0;
+  background-color: rgb(6, 6, 6);
+}
+  
+main .hero-full-width-container {
+  position: relative;
+  padding: 32px;
+  min-height: 560px;
+}
+
+.hero-full-width .textblock {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  color: white;
+}
+
+main .hero-full-width h1 {
+  font-family: var(--museo-font-family);
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+main .hero-full-width h1 span,main .hero-full-width h1 strong {
+  background-image: linear-gradient(90.38deg,#00fff0 4.77%,#00f6ff 46.73%,#b896ff 90.19%);
+  font-weight: 500;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-color: #00fff0;
+}
+
+main .hero-full-width picture {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+main .hero-full-width img {
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-full-width a.button {
+  font-family: var(--museo-font-family);
+  font-weight: 900;
+  font-size: 1.2rem;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.hero-full-width a.button .arrow {
+    display: inline;
+    fill: #fff;
+    width: 3.6rem;
+    height: 1.3rem;
+    vertical-align: middle;
+    transform: translateY(-0.05em);
+    margin-left: 0px;
+}

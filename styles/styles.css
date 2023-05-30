@@ -10,19 +10,119 @@
  * governing permissions and limitations under the License.
  */
 
+@font-face {
+    font-family:'museo-sans';
+    src: url('/fonts/museosans-100.otf') format("opentype");
+    font-weight:100;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'museo-sans';
+    src: url('/fonts/museosans-100-italic.otf') format("opentype");
+    font-weight:100;
+    font-style:italic;
+}
+
+@font-face {
+    font-family:'museo-sans';
+    src: url('/fonts/museosans-300.otf') format("opentype");
+    font-weight:300;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'museo-sans';
+    src: url('/fonts/museosans-300-italic.otf') format("opentype");
+    font-weight:100;
+    font-style:italic;}
+
+@font-face {
+    font-family:'museo-sans';
+    src: url('/fonts/museosans-500.otf') format("opentype");
+    font-weight:500;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'museo-sans';
+    src: url('/fonts/museosans-500-italic.otf') format("opentype");
+    font-weight:100;
+    font-style:italic;
+}
+
+@font-face {
+    font-family:'museo-sans';
+    src:url('/fonts/museosans-700.otf') format("opentype");
+    font-weight:700;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'museo-sans';
+    src:url('/fonts/museosans-700-italic.otf') format("opentype");
+    font-weight:100;
+    font-style:italic;
+}
+
+@font-face {
+    font-family:'museo-sans';
+    src:url('/fonts/museosans-900.otf') format("opentype");
+    font-weight:900;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'museo-sans';
+    src:url('/fonts/museosans-900-italic.otf') format("opentype");
+    font-weight:100;
+    font-style:italic;
+}
+
  :root {
   /* colors */
-  --link-color: #035fe6;
+  --link-color: #fff;
   --link-hover-color: #136ff6;
-  --background-color: #fff;
+  --background-color: rgb(6, 6, 6);
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
-  --text-color: #000;
+  --text-color: #fff;
 
   /* fonts */
   --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --museo-font-family: "museo-sans","source-han-sans-simplified-c","Source Sans Pro","noto-sans-cjk-jp",arial,helvetica,sans-serif;
+
+    .museo-sans {
+        font-family: var(--museo-font-family);
+    }
+
+    .museo-sans-100,.museo-sans-light {
+        font-family: var(--museo-font-family);
+        font-weight:100
+    }
+
+    .museo-sans-300 {
+        font-family: var(--museo-font-family);
+        font-weight:300
+    }
+
+    .museo-sans-500 {
+        font-family: var(--museo-font-family);
+        font-weight:500
+    }
+
+    .museo-sans-700 {
+        font-family: var(--museo-font-family);
+        font-weight:700
+    }
+
+    .museo-sans-bold {
+        font-family: var(--museo-font-family);
+        font-weight:900
+    }
+
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -128,10 +228,10 @@ a:any-link {
 
 a:hover {
   text-decoration: underline;
-  color: var(--link-hover-color);
 }
 
 /* buttons */
+/*
 a.button:any-link, button {
   font-family: var(--body-font-family);
   display: inline-block;
@@ -155,6 +255,7 @@ a.button:any-link, button {
 a.button:hover, a.button:focus, button:hover, button:focus  {
   background-color: var(--link-hover-color);
   cursor: pointer;
+  text-decoration: underline;
 }
 
 button:disabled, button:disabled:hover {
@@ -167,6 +268,7 @@ a.button.secondary, button.secondary {
   border: 2px solid currentcolor;
   color: var(--text-color)
 }
+*/
 
 main input {
   font-size: 1.25rem;

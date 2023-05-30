@@ -150,6 +150,7 @@ header .nav-brand {
 header nav .nav-brand img {
   width: 128px;
   height: auto;
+  padding-top: 10px;
 }
 
 /* sections */
