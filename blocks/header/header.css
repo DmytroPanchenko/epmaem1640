@@ -2,8 +2,14 @@
 header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   position: fixed;
+}
+
+@media (min-width: 900px) {
+  header .nav-wrapper {
+    border-bottom: white 2px solid;
+  }
 }
 
 header nav {
@@ -148,7 +154,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 96px;
   height: auto;
   padding-top: 10px;
 }
@@ -234,8 +240,9 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections > ul > li {
     flex: 0 1 auto;
     position: relative;
-    font-weight: 500;
-  }
+    font-family: var(--museo-font-family);
+    font-weight:700;
+ }
 
   header nav .nav-sections > ul > li > ul {
     display: none;
@@ -248,8 +255,8 @@ header nav .nav-sections ul > li > ul > li {
     left: -1em;
     width: 200px;
     margin-top: 12px;
-    padding: 1em;
-    background-color: var(--highlight-background-color);
+    padding: 2em;
+    background-color: var(--background-color);
     white-space: initial;
   }
 
@@ -262,7 +269,7 @@ header nav .nav-sections ul > li > ul > li {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--highlight-background-color);
+    border-bottom: 8px solid var(--background-color);
   }
 
   header nav .nav-sections > ul > li > ul > li {
