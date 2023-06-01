@@ -8,7 +8,7 @@ header .nav-wrapper {
 
 @media (min-width: 900px) {
   header .nav-wrapper {
-    border-bottom: white 2px solid;
+    border-bottom: var(--highlight-background-color) 2px solid;
   }
 }
 
