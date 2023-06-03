@@ -1,0 +1,72 @@
+.stock__row {
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  @media screen and (min-width: 900px) {
+    .stock__row div {
+        width: 20%;
+    }
+  }  
+
+  .stock__eyebrow {
+    letter-spacing: 0.5em;
+    font-size: 1rem;
+    display: block;
+  }
+
+  .stock__row > div:not(:first-child) .stock__eyebrow {
+    min-height: 2.5rem;
+  }
+
+  .stock__row > div:not(:last-child)  {
+    border-right: var(--highlight-background-color) 2px solid;      
+  }
+
+  .stock__row > div:not(:first-child)  {
+    padding-left: 1rem;
+  }
+
+  .stock__figurecontainer {
+    display: flex;
+    /* height: 100% !important;*/
+    align-items: center !important;
+    vertical-align: baseline;
+  }
+
+  .stock__figure--regular {
+    font-family: var(--museo-font-family);
+    font-weight: 700;
+    font-size: 1.5rem;    
+    color: rgb(0, 246, 255);
+  }
+
+  .stock__figure--highlighted {
+    background-image: linear-gradient(90.38deg,#00fff0 4.77%,#00f6ff 46.73%,#b896ff 90.19%);
+    font-family: var(--museo-font-family);
+    font-weight: 700;
+    font-size: 2.8rem;
+    font-style: normal;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  
+
+  .stock__info {
+    display: block;
+    font-family: var(--museo-font-family);
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;    
+  }
+
+  .stock__credits {
+    font-family: var(--museo-font-family);
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    color: var(--attribution-color);
+  }
