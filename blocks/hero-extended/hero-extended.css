@@ -61,6 +61,7 @@ main .hero-extended img {
   font-weight: 500;
   font-size: 4rem;
   font-style: normal;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
