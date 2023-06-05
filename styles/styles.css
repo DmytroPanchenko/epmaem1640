@@ -88,6 +88,7 @@
   --highlight-background-color: #ccc;
   --text-color: #fff;
   --attribution-color: #8a8a8a;
+  --highlight-text-color: #00fff0;
 
   /* fonts */
   --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
@@ -231,46 +232,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* buttons */
-/*
-a.button:any-link, button {
-  font-family: var(--body-font-family);
-  display: inline-block;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: 2px solid transparent;
-  padding: 5px 30px;
-  text-align: center;
-  font-style: normal;
-  font-weight: 600;
-  cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
-  margin: 16px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-radius: 30px;
-}
-
-a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-button:disabled, button:disabled:hover {
-  background-color: var(--overlay-background-color);
-  cursor: unset;
-}
-
-a.button.secondary, button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color)
-}
-*/
-
 main input {
   font-size: 1.25rem;
   width: 100%;
@@ -343,4 +304,18 @@ main .section {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+.section .default-content-wrapper h2 span {
+  font-family: var(--museo-font-family);
+  font-weight: 500;
+  font-size: 4rem;
+  color: var(--text-color);
+  background-image: linear-gradient(90.38deg,#00fff0 4.77%,#00f6ff 46.73%,#b896ff 90.19%);
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-color: var(--highlight-text-color);
 }

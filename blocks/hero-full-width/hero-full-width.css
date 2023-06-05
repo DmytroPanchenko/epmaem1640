@@ -36,7 +36,7 @@ main .hero-full-width h1 span,main .hero-full-width h1 strong {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-color: #00fff0;
+  background-color: var(--highlight-text-color);
 }
 
 main .hero-full-width picture {

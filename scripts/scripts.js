@@ -109,6 +109,17 @@ async function loadLazy(doc) {
   sampleRUM('lazy');
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));
+
+  // a fix to apply gradient to standalone h2 elements
+  main.querySelectorAll('.section .default-content-wrapper h2').forEach((h2) => {
+    if (!h2.innerHTML.includes('<span')) {
+      const innerContent = h2.innerHTML;
+      h2.innerHTML = '';
+      const span = document.createElement('span');
+      h2.append(span);
+      span.innerHTML = innerContent;
+    }
+  });  
 }
 
 /**

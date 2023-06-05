@@ -1,4 +1,5 @@
 .cards > ul {
+  font-family: var(--museo-font-family);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -8,12 +9,20 @@
 }
 
 .cards > ul > li {
-  border: 1px solid var(--highlight-background-color);
+  border: 1px solid var(--highlight-text-color);
   background-color: var(--background-color)
 }
 
 .cards .cards-card-body {
   margin: 16px;
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.cards .cards-card-body strong {
+  font-weight: 500;  
+  font-size: 2rem;  
+  color: var(--highlight-text-color);
 }
 
 .cards .cards-card-image {
